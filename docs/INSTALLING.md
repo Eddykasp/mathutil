@@ -1,6 +1,10 @@
 # Installing
 
 1. [Install dependency using JitPack](https://github.com/Eddykasp/mathutil/blob/master/docs/INSTALLING.md#jitpack)
+    1. [Maven](https://github.com/Eddykasp/mathutil/blob/master/docs/INSTALLING.md#maven)
+    2. [Gradle](https://github.com/Eddykasp/mathutil/blob/master/docs/INSTALLING.md#gradle)
+    3. [sbt](https://github.com/Eddykasp/mathutil/blob/master/docs/INSTALLING.md#sbt)
+    4. [Leiningen](https://github.com/Eddykasp/mathutil/blob/master/docs/INSTALLING.md#leiningen)
 2. [Build from source](https://github.com/Eddykasp/mathutil/blob/master/docs/INSTALLING.md#source)
 
 ## JitPack
