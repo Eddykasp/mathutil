@@ -1,5 +1,6 @@
 # Installing
 
+## Table of Contents
 1. [Install dependency using JitPack](https://github.com/Eddykasp/mathutil/blob/master/docs/INSTALLING.md#jitpack)
     1. [Maven](https://github.com/Eddykasp/mathutil/blob/master/docs/INSTALLING.md#maven)
     2. [Gradle](https://github.com/Eddykasp/mathutil/blob/master/docs/INSTALLING.md#gradle)
