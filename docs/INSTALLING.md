@@ -1,5 +1,8 @@
 # Installing
 
+1. [Install dependency using JitPack](https://github.com/Eddykasp/mathutil/blob/master/docs/INSTALLING.md#JitPack)
+2. [Build from source](https://github.com/Eddykasp/mathutil/blob/master/docs/INSTALLING.md#Source)
+
 ## JitPack
 You can use JitPack to add this project as a dependency to your project using Gradle, Maven, sbt or Leiningen. View this project on [JitPack](https://jitpack.io/#Eddykasp/mathutil) or follow the instructions below.
 ### Gradle
