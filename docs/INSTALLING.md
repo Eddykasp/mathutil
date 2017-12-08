@@ -67,5 +67,5 @@ You can use JitPack to add this project as a dependency to your project using Gr
    ```
 
 ## Source
-You can also build the project yourself from source using Maven. Clone the repository or download the desired [release](https://github.com/Eddykasp/mathutil/releases).Use ```mvn install``` to build the project.
+You can also build the project yourself from source using Maven. Clone the repository or download the desired [release](https://github.com/Eddykasp/mathutil/releases). Use ```mvn install``` to build the project.
    
