@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.concurrent.ArrayBlockingQueue;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
@@ -19,7 +20,7 @@ class MathTest {
 
     @Test
     void testAverageWithNullCollection(){
-        Collection<Double> collection = new ArrayList<>();
+        Collection<Double> collection = null;
         Double result = Math.average(collection);
         assertNull(result);
     }
@@ -56,5 +57,41 @@ class MathTest {
         Double result = Math.average(collection);
         Double expectedResult = -782967.9783333333;
         assertEquals(expectedResult, result, 0.000001);
+    }
+
+    @Test
+    void testSumPositiveValues(){
+        Collection<Double> collection = new ArrayList<>();
+        collection.add(2.5);
+        collection.add(5.4);
+        collection.add(4.6);
+        Double result = Math.sum(collection);
+        Double expectedResult = 12.5;
+        assertEquals(expectedResult, result, 0.01);
+    }
+
+    @Test
+    void testSumWithNegativeValues(){
+        Collection<Double> collection = new ArrayList<>();
+        collection.add(-2.5);
+        collection.add(-5.4);
+        collection.add(-4.6);
+        Double result = Math.sum(collection);
+        Double expectedResult = -12.5;
+        assertEquals(expectedResult, result, 0.01);
+    }
+
+    @Test
+    public void testSumWithEmptyCollection(){
+        Collection<Double> collection = new ArrayList<>();
+        Double result = Math.sum(collection);
+        assertNull(result);
+    }
+
+    @Test
+    public void testSumWithNull(){
+        Collection<Double> collection = null;
+        Double result = Math.sum(collection);
+        assertNull(collection);
     }
 }
