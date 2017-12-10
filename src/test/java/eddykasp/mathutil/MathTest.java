@@ -94,4 +94,29 @@ class MathTest {
         Double result = Math.sum(collection);
         assertNull(collection);
     }
+
+    @Test
+    public void testProduct(){
+        Collection<Double> collection = new ArrayList<>();
+        collection.add(2.0);
+        collection.add(3.0);
+        collection.add(-4.5);
+        Double result = Math.product(collection);
+        Double expectedResult = -27.0;
+        assertEquals(expectedResult, result);
+    }
+
+    @Test
+    public void testProductWithEmptyCollection(){
+        Collection<Double> collection = new ArrayList<>();
+        Double result = Math.product(collection);
+        assertNull(result);
+    }
+
+    @Test
+    public void testProductWithNull(){
+        Collection<Double> collection = null;
+        Double result = Math.product(collection);
+        assertNull(result);
+    }
 }

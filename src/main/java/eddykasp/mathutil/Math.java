@@ -39,4 +39,22 @@ public class Math {
         }
         return sum;
     }
+
+    /**
+     * Calculates the product of a collection of values.
+     * @param collection A collection of Double values.
+     * @return The product of all passed in values, returns null if the
+     * collection is empty or null.
+     */
+    public static Double product(Collection<Double> collection){
+        if(collection == null || collection.size() == 0){
+            return null;
+        }
+        Double prod = 1.0;
+        for (Double n :
+                collection) {
+            prod *= n;
+        }
+        return prod;
+    }
 }
